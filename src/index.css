@@ -1,0 +1,213 @@
+/* General Styles */
+/* src/index.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9; /* Soft light gray for contrast */
+  color: #2b2d42; /* Dark slate */
+}
+
+/* Header */
+/* src/components/Header.css */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #63676f; /* Vibrant dark navy */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.site-name {
+  color: #ffc857; /* Bright gold */
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 2rem;
+}
+
+nav ul li a {
+  padding: 8px 12px;
+  color: #ffc857; /* Bright gold */
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #ffc857; /* Hover background */
+  color: #283149; /* Dark navy text */
+}
+
+nav ul li a.active {
+  font-weight: bold;
+  color: #f4f6f9; /* Light background text */
+  background-color: #d7263d; /* Vivid red for active link */
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  min-height: 10vh;
+  background-color: #283149; /* Dark navy */
+  color: #f4f6f9; /* Light text */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+  min-height: 80vh;
+  background-color: #edf2f4; /* Soft off-white */
+}
+
+/* Button Styles */
+button {
+  background-color: #d7263d; /* Vivid red */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff7f51; /* Bright coral */
+}
+
+/* Additional Styling */
+h1, h2 {
+  color: #2b2d42; /* Dark slate */
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Booking Form */
+/* src/pages/Booking.css */
+
+.booking-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #ff7f51; /* Coral border */
+  border-radius: 10px;
+  background-color: #f7f9fc; /* Soft blue-gray */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.booking-form h2 {
+  text-align: center;
+  color: #283149;
+  font-size: 1.8rem;
+}
+
+.booking-form div {
+  margin-bottom: 1.2rem;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2b2d42;
+}
+
+.booking-form input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #d7263d;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.booking-form input:focus {
+  border-color: #ff7f51;
+  outline: none;
+}
+
+.booking-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #d7263d;
+  color: #f4f6f9;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+  background-color: #ff7f51;
+  color: #283149;
+}
+
+/* Services Navigation */
+/* src/pages/Services.css */
+
+.services-nav {
+  margin: 1.5rem 0;
+}
+
+.services-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-nav li {
+  margin: 0.75rem 0;
+}
+
+.services-nav a {
+  text-decoration: none;
+  color: #d7263d; /* Vivid red for links */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.services-nav a:hover {
+  color: #ff7f51; /* Coral for hover */
+}
+
+.services-nav a.active {
+  font-weight: bold;
+  color: #283149; /* Dark navy */
+  background-color: #ffc857; /* Gold background */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
